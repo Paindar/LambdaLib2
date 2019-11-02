@@ -297,7 +297,7 @@ public class NetworkS11n {
         addDirect(Entity.class, new NetS11nAdaptor<Entity>() {
             @Override
             public void write(ByteBuf buf, Entity obj) {
-                buf.writeByte(obj.dimension);
+                buf.writeShort(obj.dimension);
                 if(obj instanceof MultiPartEntityPart)
                 {
                     EntityDragon dragon = (EntityDragon) ((MultiPartEntityPart) obj).parent;
