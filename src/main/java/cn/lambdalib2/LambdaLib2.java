@@ -23,12 +23,12 @@ import org.apache.logging.log4j.Logger;
 public class LambdaLib2
 {
     public static final String MODID = "lambdalib2";
-    public static final String VERSION = "@LAMBDA_LIB_VERSION@";
+    public static final String VERSION = "0.1.8";
 
     /**
      * Whether we are in development (debug) mode.
      */
-    public static final boolean DEBUG = VERSION.startsWith("@");
+    public static final boolean DEBUG = false;
 
     public static final SimpleNetworkWrapper channel = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
     public static Configuration config;
